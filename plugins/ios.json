@@ -1,0 +1,54 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "AdSupport.framework": [],
+                    "AudioToolbox.framework": [],
+                    "AVFoundation.framework": [],
+                    "CoreGraphics.framework": [],
+                    "CoreTelephony.framework": [],
+                    "EventKit.framework": [],
+                    "EventKitUI.framework": [],
+                    "Foundation.framework": [],
+                    "MessageUI.framework": [],
+                    "QuartzCore.framework": [],
+                    "StoreKit.framework": [],
+                    "SystemConfiguration.framework": [],
+                    "UIKit.framework": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.icomp.pay.pokedex"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.icomp.pay.pokedex"
+        }
+    },
+    "dependent_plugins": {}
+}
